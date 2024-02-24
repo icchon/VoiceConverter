@@ -80,7 +80,7 @@ except Exception as e:
     f1 = open("./output.txt", "w", encoding="shift_jis")
     text = "音声の変換に失敗しました。音声が短すぎるか長過ぎる可能性があります"
     f1.write(text)
-    f2.close()
+    f1.close()
     f2 = open("./error.txt", "w", encoding="shift_jis")
     f2.write(str(e))
     f2.close()

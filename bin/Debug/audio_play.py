@@ -78,8 +78,8 @@ try:
             lighten_wav()    
 except Exception as e:
     f = open("./output.txt", "w", encoding="shift_jis")
-    text = "音声の変換に失敗しました"
-    text = str(e)
+    text = "音声の変換に失敗しました。音声が短すぎるか長過ぎる可能性があります"
+    #text = str(e)
     f.write(text)
     f.close()
 

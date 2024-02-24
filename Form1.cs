@@ -197,7 +197,7 @@ namespace AudioPlayX
                     InitializeTimer();
                     PauseUI();
 
-                    /*
+                    
                     using (var reader = new AudioFileReader(filePath))
                     {
                         using (var writer = new WaveFileWriter("input.wav", reader.WaveFormat))
@@ -205,9 +205,9 @@ namespace AudioPlayX
                             reader.CopyTo(writer);
                         }
                     }
-                    */
-                    string destinationPath = "input.wav";
-                    File.Copy(filePath, destinationPath, true);
+                    
+                    //string destinationPath = "input.wav";
+                    //File.Copy(filePath, destinationPath, true);
                     convert.Text = "変換中　";
 
                     await Task.Run(() => Wav2Text());
